@@ -1,8 +1,31 @@
-import './globals.css'
+import '@/app/css/globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat, Unica_One, Inter } from 'next/font/google'
+import localFont from 'next/font/local'
+ 
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
+})
+
+const unicaOne = Unica_One({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-unica-one',
+})
+
+const clashDisplay = localFont({
+  src: './fonts/ClashDisplay-Regular.woff2',
+  display: 'swap',
+  variable: '--font-clash-display',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${unicaOne.variable} ${clashDisplay.variable} ${inter.variable}`}>
+      <body className={montserrat.className}>{children}</body>
     </html>
   )
 }
