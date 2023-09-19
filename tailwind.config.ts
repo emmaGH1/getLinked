@@ -8,11 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        montserrat: ['var(--font-montserrat)'],
+        clashDisplay: ['var(--font-clash-display)'],
+        unicaOne: ['var(--font-unica-one)'],
+        inter: ['var(--font-inter)'],
       },
+      colors: (theme) => ({
+        'gradient-primary': `linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)`,
+        'home':'#150E28',
+        'primary': '#FFF',
+        'secondary': '#D434FE',
+        'accent': '#903AFF',
+      })
     },
   },
   plugins: [],
