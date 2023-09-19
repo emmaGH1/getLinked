@@ -14,13 +14,15 @@ const config: Config = {
         unicaOne: ['var(--font-unica-one)'],
         inter: ['var(--font-inter)'],
       },
-      colors: (theme) => ({
-        'gradient-primary': `linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)`,
+      colors: {
         'home':'#150E28',
         'primary': '#FFF',
         'secondary': '#D434FE',
         'accent': '#903AFF',
-      })
+      },
+      width: {
+        '9/10': '90%',
+      }
     },
   },
   plugins: [],
