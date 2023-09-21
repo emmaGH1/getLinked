@@ -34,7 +34,7 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col mt-10">
                 {navLinks.map(link => (
-                    <Link key={link.id} href={link.id} className="mt-5 text-lg">
+                    <Link key={link.id} href={link.id} className="mt-5 text-lg" onClick={handleToggle}>
                     {link.label}
                     </Link>
                 ))}
