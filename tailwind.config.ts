@@ -11,7 +11,7 @@ const config: Config = {
       fontFamily: {
         montserrat: ['var(--font-montserrat)'],
         clashDisplay: ['var(--font-clash-display)'],
-        unicaOne: ['var(--font-unica-one)'],
+        unicaOne: ['"Unica One"', 'cursive'],
         inter: ['var(--font-inter)'],
       },
       colors: {

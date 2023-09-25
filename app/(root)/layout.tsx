@@ -1,6 +1,6 @@
-import '@/app/css/globals.css'
+import './styles/globals.css'
 import type { Metadata } from 'next'
-import { Montserrat, Unica_One, Inter } from 'next/font/google'
+import { Montserrat, Inter } from 'next/font/google'
 import localFont from 'next/font/local'
  
 const inter = Inter({
@@ -14,32 +14,25 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 })
 
-const unicaOne = Unica_One({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '400',
-  variable: '--font-unica-one',
-})
-
 const clashDisplay = localFont({
   src: [
     {
-      path: './fonts/ClashDisplay-Regular.woff2',
+      path: '../fonts/ClashDisplay-Regular.woff2',
       weight: '400',
       style: 'normal'
     },
     {
-      path: './fonts/ClashDisplay-Medium.woff2',
+      path: '../fonts/ClashDisplay-Medium.woff2',
       weight: '500',
       style: 'normal'
     },
     {
-      path: './fonts/ClashDisplay-Semibold.woff2',
+      path: '../fonts/ClashDisplay-Semibold.woff2',
       weight: '600',
       style: 'normal'
     },
     {
-      path: './fonts/ClashDisplay-Bold.woff2',
+      path: '../fonts/ClashDisplay-Bold.woff2',
       weight: '600',
       style: 'normal'
     },
@@ -63,8 +56,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${unicaOne.variable} ${clashDisplay.variable} ${inter.variable}`}>
-      <body className={`${montserrat.className} bg-home text-primary`}>{children}</body>
+    <html lang="en" className={`${clashDisplay.variable} ${inter.variable}`}>
+      <body className={`${montserrat.className} bg-home text-primary scroll-smooth`}>{children}</body>
     </html>
   )
 }

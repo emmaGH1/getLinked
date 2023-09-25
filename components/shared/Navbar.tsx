@@ -13,8 +13,8 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-full mt-5 lg:mt-8 mx-auto flex justify-between items-center relative">
-        <div className="ml-5">
+    <div className="w-full lg:w-4/5 mt-5 mx-auto flex justify-between items-center relative">
+        <div className="ml-5 lg:ml-0">
           <Logo />
         </div>
         
