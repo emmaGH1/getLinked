@@ -32,10 +32,10 @@ const CriteriaPage = () => {
        <div className="lg:w-2/4">
             <h3 className="flex flex-col font-clashDisplay font-bold text-2xl lg:text-3xl items-center mt-2 lg:items-start">
                       <span>
-                          Frequently Asked
+                          Judging Criteria
                       </span>
                       <span className="text-secondary">
-                          Questions
+                          Key Attributes
                       </span>
             </h3>
 
