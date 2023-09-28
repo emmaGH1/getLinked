@@ -5,7 +5,7 @@ import { criteriaList } from '../constants/index';
 
 const CriteriaPage = () => {
   return (
-<div className="h-screen border-t border-white/10">
+<div className="min-h-screen border-t border-white/10">
       <div className="relative flex flex-col lg:flex-row w-9/10 lg:w-4/5 items-center mt-5 lg:mt-6 justify-center lg:justify-between mx-auto">
       
       <PurpleGradient className='w-[250px] h-[250px] blur-[150px] left-10'/>
