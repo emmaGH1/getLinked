@@ -3,6 +3,7 @@ import RulesPage from "@/components/RulesPage";
 import HomePage from "@/components/HomePage";
 import Navbar from "@/components/shared/Navbar";
 import CriteriaPage from "@/components/CriteriaPage";
+import FAQPage from "@/components/FAQPage";
 
 const Page = () => {
   return (
@@ -16,6 +17,7 @@ const Page = () => {
         <IntroPage />
         <RulesPage />
         <CriteriaPage />
+        <FAQPage />
       </main>
     </div>
   );
